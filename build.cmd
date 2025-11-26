@@ -237,6 +237,7 @@ git.exe apply --directory=mesa-%MESA_VERSION% patches/gallium-use-tex-cache.patc
 git.exe apply --directory=mesa-%MESA_VERSION% patches/gallium-static-build.patch      || exit /b 1
 git.exe apply --directory=mesa-%MESA_VERSION% patches/test.patch                      || exit /b 1
 
+
 mkdir mesa-%MESA_VERSION%\subprojects\llvm                                   1>nul || exit /b 1
 copy meson\meson.llvm.build mesa-%MESA_VERSION%\subprojects\llvm\meson.build 1>nul || exit /b 1
 
